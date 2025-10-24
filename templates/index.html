@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The K-Means Explorer</title>
+
+  <!-- Use Flask static URL for CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>The K-Means Explorer</h1>
+    <p>Visualize the K-Means clustering algorithm step-by-step to understand convergence.</p>
+  </header>
+
+  <div class="container">
+    <div class="controls">
+      <h2>Controls</h2>
+      <div class="control-group">
+        <label for="k-select">Number of Clusters (K):</label>
+        <select id="k-select">
+          <option value="2">K=2</option>
+          <option value="3" selected>K=3</option>
+          <option value="4">K=4</option>
+          <option value="5">K=5</option>
+          <option value="6">K=6</option>
+          <option value="7">K=7</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button id="generate-btn" class="action-btn primary">1. Generate New Data</button>
+        <button id="run-btn" class="action-btn secondary" disabled>2. Run K-Means (Initialize)</button>
+        <button id="next-step-btn" class="action-btn tertiary" disabled>3. Next Step (Iterate)</button>
+      </div>
+
+      <div class="info-box">
+        Current Iteration: <span id="iteration-display">N/A</span>
+      </div>
+    </div>
+
+    <div class="visualization-area">
+      <svg id="kmeans-svg" width="600" height="400"></svg>
+      <p class="explanation">
+        The K-Means algorithm works by iteratively moving <strong>centroids</strong> (stars) to the center of their assigned <strong>data points</strong> (circles), which are colored based on their closest centroid.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built with Python (Flask/Scikit-learn) and JavaScript (D3.js)</p>
+    <p>Author: Wallace Costa</p>
+  </footer>
+
+  <!-- Load D3 first, then your app script -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
