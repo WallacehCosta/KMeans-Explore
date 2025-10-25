@@ -8,7 +8,7 @@ Built with **Python (Flask)** for heavy-duty ML calculation and **JavaScript (D3
 
 Watch the K-Means algorithm converge in real-time as centroids move toward optimal positions:
 
-![KMeans-Explorer GIF](https://github.com/user-attachments/assets/2ac0b1ee-2986-4b40-af75-5096c5dc2a88)
+![KMeans-Explorer GIF (2)](https://github.com/user-attachments/assets/abf69561-d83c-4f6f-a257-90d97d2c03e8)
 
 ---
 
