@@ -55,3 +55,6 @@ pip install -r requirements.txt
 * Click **"2. Run K-Means (Initialize)"** — this initializes the centroids and performs the first assignment.
 
 * Repeatedly click **"3. Next Step (Iterate)"** to visualize the algorithm’s progression until convergence.
+
+---
+Contact email: holandawallacecosta@gmail.com
