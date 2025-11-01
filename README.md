@@ -4,7 +4,7 @@ The K-Means Explorer is an interactive web application designed to help users fu
 
 Built with **Python (Flask)** for heavy-duty ML calculation and **JavaScript (D3.js)** for dynamic frontend animation, this project demonstrates a robust full-stack solution for educational data science tools.
 
-## Live Demonstration (GIF)
+## Demonstration (GIF)
 
 Watch the K-Means algorithm converge in real-time as centroids move toward optimal positions:
 
